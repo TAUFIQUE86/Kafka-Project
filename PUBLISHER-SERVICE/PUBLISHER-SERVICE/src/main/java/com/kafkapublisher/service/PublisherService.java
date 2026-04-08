@@ -22,3 +22,28 @@ public class PublisherService {
     }
 }
 
+/*
+
+cd C:\kafka\bin\windows
+zookeeper-server-start.bat zookeeper.properties
+```
+
+Wait until you see:
+```
+binding to port 0.0.0.0/0.0.0.0:2181
+
+
+cd C:\kafka\bin\windows
+kafka-server-start.bat server.properties
+```
+
+Wait until you see:
+```
+KafkaServer id=0] started
+
+
+// for consumer
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic order_placed --from-beginning
+
+
+*/
